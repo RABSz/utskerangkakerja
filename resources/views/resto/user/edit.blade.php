@@ -7,11 +7,9 @@
  style="display:inline">
  @csrf
  <label for="email" class="col-form-label">Username</label>
- <input type="text" class="form-control" name="email" value="{{ old('email', $data-
->email) }}" readonly/>
+ <input type="text" class="form-control" name="email" value="{{ old('email', $data->email) }}" readonly/>
  <label for="name" class="col-form-label">Nama Lengkap</label>
- <input type="text" class="form-control" name="name" value="{{ old('name', $data-
->name) }}"/>
+ <input type="text" class="form-control" name="name" value="{{ old('name', $data->name) }}"/>
  <label for="role" class="col-form-label">Role</label>
  <select class="form-control" name="role">
  @foreach($roles as $k=>$v)
